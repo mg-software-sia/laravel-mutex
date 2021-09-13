@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MgSoftware\MySQLMutex;
+namespace MgSoftware\Mutex;
 
 
 class MySQLMutex

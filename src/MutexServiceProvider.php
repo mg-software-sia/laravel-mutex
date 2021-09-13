@@ -1,10 +1,10 @@
 <?php
 
-namespace MgSoftware\MySQLMutex;
+namespace MgSoftware\Mutex;
 
 use Illuminate\Support\ServiceProvider;
 
-class MySQLMutexServiceProvider extends ServiceProvider
+class MutexServiceProvider extends ServiceProvider
 {
     public function register()
     {
