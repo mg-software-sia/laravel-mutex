@@ -1,5 +1,5 @@
 {
-    "name": "mg-software/laravel-mysql-mutex",
+    "name": "mg-software/laravel-mutex",
     "description": "MySQL allows mutual execution of concurrent processes in order to prevent \"race conditions\".",
     "keywords": ["laravel", "mysql", "mutex", "lock", "get_lock"],
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MgSoftware\\MySQLMutex\\": "src/"
+            "MgSoftware\\Mutex\\": "src/"
         }
     }
 }
