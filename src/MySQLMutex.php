@@ -117,7 +117,7 @@ class MySQLMutex
      */
     protected function hashLockName(string $name): string
     {
-        return sha1($name);
+        return sha1($name . env('APP_NAME', 'laravel'));
     }
 
     protected function supported(): void
