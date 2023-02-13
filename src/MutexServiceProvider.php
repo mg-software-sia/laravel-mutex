@@ -15,7 +15,6 @@ class MutexServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->app->singleton('command.mutex-migrate', function ($app) {
                 return new MigrateCommand($app['migrator'], $app[Dispatcher::class]);
-                return new \Illuminate\Database\Console\Migrations\MigrateCommand($app['migrator'], $app[Dispatcher::class]);
             });
             $this->commands([
                 'command.mutex-migrate'
