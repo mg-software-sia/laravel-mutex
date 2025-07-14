@@ -77,6 +77,13 @@ class MySQLMutex
         return false;
     }
 
+    public function isLockInUse(string $name): bool
+    {
+        $this->supported();
+        $lockName = $this->hashLockName($name);
+        $result = DB::selectOne('SELECT IS_USED_LOCK(?) as `in_use`', [$lockName], false);
+        return !empty($result->in_use);
+    }
 
     /**
      * Acquires lock by given name.
